@@ -10,13 +10,8 @@ qc.x(0)
 # On ajoute une superposition à la porte choisie.
 qc.h(0)
 
-# Supposons que Monty (l'hôte) ouvre la porte 1.
-# Monty ouvre la porte 1 seulement si le trésor est derrière la porte 0 ou 2.
-# Nous pouvons utiliser une porte Toffoli pour simuler cette action.
 qc.ccx(0, 2, 1)
 
-# Si le joueur décide de changer son choix après que Monty ait ouvert une porte,
-# nous créons une superposition à nouveau.
 qc.h(0)
 
 # Mesurer le résultat
